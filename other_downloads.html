@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Gradient's Download Host</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, user-scalable=yes">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body onResize="floatFunction()">
+    <div class="wrapper">
+        <div class="nav resizeMiddle">
+            <a class="navbutton floaty" href="index.html">HOME</a><a class="navbutton floaty" href="https://soundcloud.com/gradientelectro">MY SOUNDCLOUD</a>
+        </div>
+        <div class="content centerDiv resizeMiddle">
+            <h1><a href="/downloads/drum_samples_gradient.zip">DRUM SAMPLES</a></h1>
+            <p>Samples are provided royalty free. Feel free to use and redistribute them as you see fit.</p>
+            <h1><a href="/downloads/Hybrid_3_presets_gradient.zip">HYBRID 3 PRESETS</a></h1>
+            <p>
+                Presets are provided royalty free. Feel free to use and redistribute them as you see fit.<br />
+                Please note that presets are provided as .fxb files for use with Hybrid 3. Open them in your DAW, and not Hybrid 3's interface.
+            </p>
+        </div>
+        <div class="footer centerDiv resizeMiddle">
+            © 2017 Gabriel B.
+        </div>
+    </div>
+    <script async>
+        var cb = function () {
+            var l = document.createElement('link'); l.rel = 'stylesheet';
+            l.href = 'stylesheet.css';
+            var h = document.getElementsByTagName('script')[0];
+            h.parentNode.insertBefore(l, h);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(cb);
+        else window.addEventListener('load', cb);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="UI.js" async></script>
+</body>
+</html>
